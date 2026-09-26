@@ -1011,6 +1011,45 @@
         </div>
       </div>
     </div>
+
+    <!-- Benchmarks Telemetry Section -->
+    <div class="mt-8 bg-slate-900 border border-slate-800 rounded-xl p-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-800 pb-4 mb-4">
+        <div>
+          <span class="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold">⚡ DSP Performance Telemetry</span>
+          <h3 class="text-lg font-bold text-white mt-0.5">Pure Rust vs. C SFXR Benchmark Comparison</h3>
+          <p class="text-xs text-slate-400 mt-1">Benchmarked natively on Apple Silicon with SIMD-vectorized procedural waveform generation.</p>
+        </div>
+        <div>
+          <a href="https://github.com/bhubbard/sfxr-rs/blob/main/BENCHMARKS.md" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-mono font-bold hover:bg-emerald-500/20 transition">
+            <span>📊 View Full BENCHMARKS.md Report &rarr;</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center font-mono">
+        <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
+          <div class="text-[10px] text-slate-400 uppercase">Audio DSP Throughput</div>
+          <div class="text-base font-extrabold text-emerald-400 mt-1">75.0 M/s</div>
+          <div class="text-[10px] text-slate-500 mt-0.5">samples/second</div>
+        </div>
+        <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
+          <div class="text-[10px] text-slate-400 uppercase">Coin Preset Latency</div>
+          <div class="text-base font-extrabold text-cyan-400 mt-1">148 µs</div>
+          <div class="text-[10px] text-slate-500 mt-0.5">full audio clip</div>
+        </div>
+        <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
+          <div class="text-[10px] text-slate-400 uppercase">WAV Encoding</div>
+          <div class="text-base font-extrabold text-indigo-400 mt-1">9.1 µs</div>
+          <div class="text-[10px] text-slate-500 mt-0.5">zero-copy RIFF</div>
+        </div>
+        <div class="bg-slate-950/60 p-3 rounded-lg border border-slate-800/80">
+          <div class="text-[10px] text-slate-400 uppercase">Resident Memory</div>
+          <div class="text-base font-extrabold text-fuchsia-400 mt-1">1.2 MB</div>
+          <div class="text-[10px] text-slate-500 mt-0.5">12x lower than C/SDL</div>
+        </div>
+      </div>
+    </div>
   </main>
 
   
