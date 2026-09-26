@@ -1,0 +1,18 @@
+[package]
+name = "sfxr"
+version = "0.1.0"
+edition = "2024"
+authors = ["Brandon Hubbard <bhubbard@users.noreply.github.com>"]
+description = "Pure Rust procedural 8-bit/16-bit sound effect generator and synthesizer from SFXR"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/bhubbard/sfxr-rs"
+readme = "README.md"
+keywords = ["sfxr", "synthesizer", "audio", "sound", "gamedev"]
+categories = ["multimedia::audio", "game-development"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "2.0"
+
+[dev-dependencies]
+rand = "0.8"
