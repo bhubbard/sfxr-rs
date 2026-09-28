@@ -3,3 +3,5 @@
 Cargo.lock
 .DS_Store
 *.wav
+coverage_report
+target/coverage
